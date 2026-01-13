@@ -1,0 +1,17 @@
+==9607== Memcheck, a memory error detector
+==9607== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==9607== Using Valgrind-3.25.1 and LibVEX; rerun with -h for copyright info
+==9607== Command: ./untrue untrue.config
+==9607== Parent PID: 9603
+==9607== 
+==9607== 
+==9607== FILE DESCRIPTORS: 3 open (3 inherited) at exit.
+==9607== 
+==9607== HEAP SUMMARY:
+==9607==     in use at exit: 0 bytes in 0 blocks
+==9607==   total heap usage: 4 allocs, 4 frees, 5,848 bytes allocated
+==9607== 
+==9607== All heap blocks were freed -- no leaks are possible
+==9607== 
+==9607== For lists of detected and suppressed errors, rerun with: -s
+==9607== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

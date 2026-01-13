@@ -30,7 +30,7 @@ $(BUILD_PATH)/%.o: $(CFILES_PATH)/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 valgrind: all
-	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes --track-origins=yes --suppressions=resources/a.supp --log-file="resources/leaks.log" ./untrue
+	valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes --track-origins=yes --log-file="resources/leaks.log" ./untrue untrue.config
 
 clean:
 	@echo "Cleaning object files...\n"
